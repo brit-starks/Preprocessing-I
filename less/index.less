@@ -77,6 +77,10 @@ html, body {
 	justify-content: space-between;
 }
 
+.heading-mrg(){
+	margin-left: 8rem;
+	margin-bottom: 2rem;
+}
 /*----------------Styling Begins-------------*/
 
 .container {
@@ -102,18 +106,39 @@ display: flex;
 font-size: 2rem;
 width: 100%;
 justify-content: space-between;
+background: #D3D3D3;
 
 	.name {
 		display: flex;
 		flex-direction: column;
+		width: 50%;
+		img{
+			border-radius: 5rem;
+			margin: 4rem;
+			width: 40em;
+		}
 			h1 {
 				font-size: 7rem;
-				width: 50%;
-				margin-top: 4rem;
+				width: 130rem;
+				color: darkgray;
+				.heading-mrg()
 			}
-			
+			h2 {
+				font-size: 3.6rem;
+				color: @heading-color;
+				margin-bottom: 2rem;
+				.heading-mrg()
+			}
 	}
 }
+	.snippet {
+		width: 50%;
+		margin: 2rem;
+		font-size: 3.4rem;
+		font-weight: bold;
+		color: @heading-color;
+		align-self: center;
+	}
 
 	.section1 {
 		display: flex;
