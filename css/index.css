@@ -168,7 +168,8 @@ header nav a {
 .resume-intro {
   display: flex;
   font-size: 2rem;
-  width: 50%;
+  width: 100%;
+  justify-content: space-between;
 }
 .resume-intro .name {
   display: flex;
@@ -177,6 +178,7 @@ header nav a {
 .resume-intro .name h1 {
   font-size: 7rem;
   width: 50%;
+  margin-top: 4rem;
 }
 .section1 {
   display: flex;
