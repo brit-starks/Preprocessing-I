@@ -251,7 +251,11 @@ header {
   margin-left: 10rem;
 }
 .resume-bottom .experience {
-  display: flex;
-  justify-content: center;
   margin-top: 7rem;
+}
+.resume-bottom .experience margin- table,
+.resume-bottom .experience th,
+.resume-bottom .experience td {
+  border: 1px solid black;
+  padding: 4rem;
 }
