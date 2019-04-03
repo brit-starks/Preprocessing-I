@@ -155,6 +155,10 @@ h5 {
   width: 85%;
   margin: 0 auto;
 }
+header {
+  margin-left: 7rem;
+  margin-bottom: 13rem;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -164,10 +168,6 @@ header nav a {
   text-decoration: none;
   font-size: 4.5rem;
   margin: 5rem;
-}
-header {
-  margin-left: 7rem;
-  margin-bottom: 13rem;
 }
 .resume-intro {
   display: flex;
@@ -183,6 +183,7 @@ header {
   width: 45%;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  color: white;
   border-right: 1px solid gray;
 }
 .resume-intro .name img {
@@ -191,7 +192,7 @@ header {
   margin-right: 1.8rem;
   margin-bottom: 5rem;
   width: 32em;
-  box-shadow: 5px 10px 	20px;
+  box-shadow: 5px 10px 20px black;
 }
 .resume-intro .name h1 {
   font-size: 7rem;
@@ -205,11 +206,13 @@ header {
   margin-bottom: 2rem;
 }
 .snippet {
-  width: 38%;
+  width: 40%;
   margin: 2rem;
+  line-height: 5rem;
+  word-spacing: 1rem;
   font-size: 3.4rem;
   font-weight: bold;
-  color: #696969;
+  color: #FFFFFF;
   align-self: center;
 }
 .snippet p {
@@ -245,17 +248,28 @@ header {
 .resume-bottom {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
-  width: 80%;
+  margin-top: 23rem;
+  width: 90%;
   margin-bottom: 10rem;
   margin-left: 10rem;
 }
 .resume-bottom .experience {
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
-.resume-bottom .experience margin- table,
+.resume-bottom .experience table {
+  width: 100%;
+}
+.resume-bottom .experience table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.resume-bottom .experience table,
 .resume-bottom .experience th,
 .resume-bottom .experience td {
   border: 1px solid black;
   padding: 4rem;
+}
+footer p {
+  margin-top: 50rem;
+  margin-left: 65rem;
+  height: 10rem;
 }

@@ -67,7 +67,7 @@ html, body {
 		margin-bottom: 15px;
 }
 /*----------------Colors------------------*/ 
-@main-color: #D3D3D3;
+@main-color: #696969;
 @accent-color: #800000;
 @heading-color: #FFFFFF;
 
@@ -90,20 +90,18 @@ html, body {
 }
 
 header {
-	nav {
-		.flex();
-			a{
-				color: black;
-				text-decoration: none;
-				font-size: 4.5rem;
-				margin: 5rem;
-			}
-	}
-}
-
-header {
 	margin-left: 7rem;
 	margin-bottom: 13rem;
+	
+		nav {
+			.flex();
+				a{
+					color: black;
+					text-decoration: none;
+					font-size: 4.5rem;
+					margin: 5rem;
+			}
+	}
 }
 
 .resume-intro {
@@ -120,6 +118,7 @@ background: #dcdcdc;
 		width: 45%;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
+		color: white;
 		border-right: 1px solid gray;
 		img{
 			border-radius: 5rem;
@@ -127,7 +126,7 @@ background: #dcdcdc;
 			margin-right: 1.8rem;
 			margin-bottom: 5rem;
 			width: 32em;
-			box-shadow: 5px 10px 	20px;
+			box-shadow: 5px 10px 20px black;
 		}
 			h1 {
 				font-size: 7rem;
@@ -142,11 +141,13 @@ background: #dcdcdc;
 	}
 }
 	.snippet {
-		width: 38%;
+		width: 40%;
 		margin: 2rem;
+		line-height: 5rem;
+		word-spacing: 1rem;
 		font-size: 3.4rem;
 		font-weight: bold;
-		color: #696969;
+		color: @heading-color;
 		align-self: center;
 
 			p {
@@ -189,21 +190,36 @@ background: #dcdcdc;
 		.resume-bottom {
 			display: flex;
 			flex-direction: column;
-			margin-top: 6rem;
-			width: 80%;
+			margin-top: 23rem;
+			width: 90%;
 			margin-bottom: 10rem;
 			margin-left: 10rem;
 
 				.experience {
-					margin-top: 7rem;
-					margin-
+					margin-top: 4rem;
+				
+					
+					table {
+						width: 100%;
+						tr:nth-child(even) {background-color: #f2f2f2;}
+					}
 
 					table, th, td {
 						border: 1px solid black;
 						padding: 4rem;
 					}
 				}
-			}
+		}
+				
+				footer {
+					p {
+						margin-top: 50rem;
+						margin-left: 65rem;
+						height: 10rem;
+					}
+				}
+			
+
 
 		
 	
