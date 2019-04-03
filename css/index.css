@@ -152,7 +152,7 @@ h5 {
 /*----------------Styling Begins-------------*/
 .container {
   font-size: 3rem;
-  width: 1800px;
+  width: 85%;
   margin: 0 auto;
 }
 header nav {
@@ -165,46 +165,81 @@ header nav a {
   font-size: 4.5rem;
   margin: 5rem;
 }
+header {
+  margin-left: 7rem;
+  margin-bottom: 13rem;
+}
 .resume-intro {
   display: flex;
   font-size: 2rem;
   width: 100%;
-  justify-content: space-between;
-  background: #D3D3D3;
+  border-radius: 2rem;
+  justify-content: space-around;
+  background: #dcdcdc;
 }
 .resume-intro .name {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-right: 1px solid gray;
 }
 .resume-intro .name img {
   border-radius: 5rem;
-  margin: 4rem;
-  width: 40em;
+  margin-top: 3rem;
+  margin-right: 1.8rem;
+  margin-bottom: 5rem;
+  width: 32em;
+  box-shadow: 5px 10px 	20px;
 }
 .resume-intro .name h1 {
   font-size: 7rem;
   width: 130rem;
-  color: darkgray;
-  margin-left: 8rem;
+  margin-left: 1rem;
   margin-bottom: 2rem;
 }
 .resume-intro .name h2 {
   font-size: 3.6rem;
-  color: #FFFFFF;
-  margin-left: 8rem;
+  color: #696969;
+  margin-left: 1rem;
   margin-bottom: 2rem;
 }
 .snippet {
-  width: 50%;
+  width: 38%;
   margin: 2rem;
   font-size: 3.4rem;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #696969;
   align-self: center;
 }
-.section1 {
+.snippet p {
+  margin-right: 1.3rem;
+}
+.resume-middle {
+  width: 80%;
   display: flex;
-  font-size: 2rem;
   justify-content: space-between;
+  margin-left: 10rem;
+}
+.resume-middle .section1 {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  font-size: 2rem;
+  line-height: 4rem;
+  justify-content: space-between;
+}
+.resume-middle .section1 p {
+  font-size: 2.6rem;
+}
+.resume-middle .section2 {
+  width: 45%;
+  line-height: 5rem;
+}
+.resume-middle .section2 p {
+  border-bottom: 1px solid #696969;
+}
+.resume-middle .section2 h2 {
+  border-bottom: 1px solid #696969;
 }
