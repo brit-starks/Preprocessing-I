@@ -195,7 +195,6 @@ header {
 }
 .resume-intro .name h1 {
   font-size: 7rem;
-  width: 130rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
 }
@@ -242,4 +241,17 @@ header {
 }
 .resume-middle .section2 h2 {
   border-bottom: 1px solid #696969;
+}
+.resume-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  width: 80%;
+  margin-bottom: 10rem;
+  margin-left: 10rem;
+}
+.resume-bottom .experience {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
 }
