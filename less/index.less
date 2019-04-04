@@ -61,7 +61,7 @@ html {
 }
 
 body {
-	max-width: 1080px;
+	max-width: 1600px;
 	width: 100%;
 	font-size: 1.5rem
 }
@@ -95,26 +95,26 @@ body {
 	width: 100%;
 	margin: 0 auto;
 
-		// @media(max-width: 500px){
-		// 	width: 100%;
-		// 	font-size: 2rem;
-		// }
+		@media(max-width: 700px){
+			width: 100%;
+			height: 1800px;
+			font-size: 2rem;
+		}
 }
 
  	header {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
 		margin: 3rem 0;
-	
+
 			nav {
 				width: 100%;
 				margin: 0 0 0 7rem;
-	
-				// @media(max-width: 500px){
-				// 	flex-direction: column;
-				// }
 
+				@media(max-width: 500px){
+					width: 100%;
+					margin: 5rem 3rem;
+				}
 				
 					a{
 						margin: 0 5rem;
@@ -124,19 +124,15 @@ body {
 						font-size: 2rem;
 						color: black;
 
-						// @media(max-width: 500px){
-						// 	margin: 0;
-						// 	width: 100%;
-						// 	font-size: 5rem;
-						// 	line-height: 0;
-						// 	margin-top: 3rem;
-						// 	border-bottom: 1px solid black;  
-						// 	padding-bottom: 4rem;
-						// }
-						}	
-					}
-				}			
-	
+						@media(max-width: 500){
+							width: 100%;
+							margin: 0;
+							flex-direction: column;
+							justify-content: center;
+						}
+				}	
+			}
+	}
 
 	.resume-intro {
 	display: flex;
@@ -144,13 +140,6 @@ body {
 	border-radius: 2rem;
 	justify-content: space-around;
 	background: @main-color;
-
-	// 	@media(max-width: 500px){
-	// 		width: 100%;
-	// 		font-size: 2rem;
-	// 		border-right: 0;
-	// 		margin-left: 67rem
-	// 	}
 	
 		.name {
 			flex-direction: column;
@@ -160,10 +149,11 @@ body {
 			color: white;
 			border-right: 2px dotted white;
 
-				// @media(max-width: 500px){
-				// 	width: 100%;
-				//}
+			@media(max-width: 700px){
+				width: 100%;
+				border: none;
 			}
+		}
 	
 			img{
 				border-radius: 5rem;
@@ -171,13 +161,13 @@ body {
 				margin-left: 3rem;
 				box-shadow: 5px 10px 20px black;
 	
-	// 				@media(max-width: 500px){
-	// 					margin: 0px 0px 0px 0px;
-	// 					width: 100%;
-	// 					font-size: 2rem;
+					@media(max-width: 500px){
+						margin: 0;
+						width: 100%;
 					
 	 				}		
-		
+			}
+
 			h1 {
 				font-size: 3.7rem;
 				color: #696969;
@@ -198,11 +188,12 @@ body {
 			color: @dark-color;
 			align-self: center;
 		 
-		 // 		@media(max-width: 900px){
-		 // 			display: none;
-		 // 		}
-			 }
- 	}
+			@media(max-width: 700px){
+				width: 100%;
+				display: none;
+			}
+		}
+	}
 
 	
 	.resume-middle {
@@ -212,34 +203,75 @@ body {
 		margin: 5rem 2rem;
 		justify-content: space-evenly;
 
+		@media(max-width: 700px){
+			width: 100%;
+			flex-direction: column;
+		}
+
+
+		@media(max-width: 500px){
+			width: 100%;
+			height: 10rem;
+			margin: 27rem 0 0 0;
+			flex-direction: column;
+		}
+
 		.section1 {
 			width: 40%;
 			flex-direction: column;
 			font-size: 1.8rem;
 			justify-content: space-between;
 			
+			@media(max-width: 700px){
+				width: 100%;
+			}
+
 			h2 {
 				border-bottom: 2px solid @dark-color;
+
+				@media(max-width: 500px){
+					text-align: center;
+				}
 			}
 			
 			p {
 				line-height: 2.3rem;
 				margin-top: 3rem;
+
+				@media(max-width: 500px){
+					width: 100%;
+					text-align: center;
+				}
 			}
 		}
-				
-
+		
 		.section2 {
 			width: 40%;
 			font-size:  1.8rem;
+
+			@media(max-width: 500px){
+				width: 100%;
+				margin: 7rem 0 0 0;
+			}
 			
 				p {
-				border-bottom: 1px solid @dark-color;
+					border-bottom: 1px solid @dark-color;
 					padding: 2rem 0;
+				}
+					
+				@media(max-width: 500px){
+					width: 100%;
+					margin: 7rem 0 0 0;
+					text-align: center;
 				}
 
 				h2 {
 					border-bottom: 2px solid #696969;
+
+					@media(max-width: 500px){
+						width: 100%;
+						text-align: center;
+					}
 				}
 		}
 	}
@@ -249,6 +281,12 @@ body {
 	width: 80%;
 	height: 25rem;
 	margin: 20rem 10rem 10rem 11rem; 
+
+	@media(max-width: 500px){
+		width: 100%;
+		margin: 28.5rem 0 0 0;
+		text-align: center;
+	}
 
 		h2{
 			border-bottom: 2px solid @dark-color;
@@ -275,4 +313,11 @@ footer {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 1.6rem;
+
+	
+	@media(max-width: 500px){
+		width: 100%;
+		margin: 15.5rem 0 0 0;
+		// text-align: center;
+	}
 }
