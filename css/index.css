@@ -181,10 +181,16 @@ header nav a {
   justify-content: center;
   text-decoration: none;
   font-size: 2rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border-bottom: 2px solid #5c0808;
+  padding: 1rem;
   background: #ebebeb;
   color: black;
+}
+header nav a:hover {
+  color: white;
+  background: #5c0808;
+  border-color: black;
 }
 @media (max-width: 500px) {
   header nav a {
@@ -272,8 +278,9 @@ header nav a {
   justify-content: center;
   background: #ebebeb;
   color: #5c0808;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border-bottom: 2px solid #5c0808;
+  padding: 0.5rem;
 }
 @media (max-width: 700px) {
   .resume-middle {
@@ -343,10 +350,9 @@ header nav a {
   }
 }
 .resume-bottom {
-  margin-top: 20rem;
   width: 80%;
   height: 25rem;
-  margin: 20rem 10rem 10rem 11rem;
+  margin: 30rem 10rem 10rem 11rem;
 }
 @media (max-width: 500px) {
   .resume-bottom {
@@ -361,13 +367,20 @@ header nav a {
   justify-content: center;
   color: #5c0808;
   border-bottom: 2px solid #5c0808;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .resume-bottom .experience {
   margin-top: 3rem;
 }
+.resume-bottom .experience table .title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
 .resume-bottom .experience table {
   width: 100%;
+  color: darkred;
 }
 .resume-bottom .experience table tr:nth-child(even) {
   background-color: #f2f2f2;
