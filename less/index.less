@@ -68,14 +68,14 @@ body {
 
 	h1, h2, h3, h4, h5 {
 		font-family: 'Libre Baskerville', serif;
-		font-size: 2.5rem;
+		font-size: 4rem;
 		letter-spacing: 1px;
 		margin-bottom: 15px;
 }
 
 /*----------------Colors------------------*/ 
 @main-color: #ebebeb;
-@accent-color: #800000;
+@accent-color: #5c0808;
 @dark-color: #696969;
 
 /*----------------Mixins-------------------*/
@@ -95,15 +95,16 @@ body {
 	width: 100%;
 	margin: 0 auto;
 
-		@media(max-width: 700px){
-			width: 100%;
-			height: 1800px;
-			font-size: 2rem;
-		}
+		// @media(max-width: 700px){
+		// 	width: 100%;
+		// 	height: 1800px;
+		// 	font-size: 2rem;
+		// }
 }
 
  	header {
 		width: 100%;
+		height: 5rem;
 		display: flex;
 		margin: 3rem 0;
 
@@ -113,7 +114,7 @@ body {
 
 				@media(max-width: 500px){
 					width: 100%;
-					margin: 5rem 3rem;
+					margin: 0 auto;
 				}
 				
 					a{
@@ -122,13 +123,24 @@ body {
 						justify-content: center;
 						text-decoration: none;
 						font-size: 2rem;
+						border-radius: 2rem;
+						border-bottom: 2px solid @accent-color;
+						background: @main-color; 
 						color: black;
 
-						@media(max-width: 500){
+						@media(max-width: 500px){
 							width: 100%;
-							margin: 0;
+							border-bottom: 2px solid darkgray;
+							display: flex;
+							margin:1rem auto;
+							padding: 1rem;
 							flex-direction: column;
-							justify-content: center;
+							align-items: center;	
+							justify-content: space-between;
+							
+							&:hover{
+								color: @accent-color;
+							}
 						}
 				}	
 			}
@@ -170,7 +182,7 @@ body {
 
 			h1 {
 				font-size: 3.7rem;
-				color: #696969;
+				color: @accent-color;
 				.heading-mrg()
 			}
 			h2 {
@@ -202,6 +214,16 @@ body {
 		height: 15rem;
 		margin: 5rem 2rem;
 		justify-content: space-evenly;
+		
+		.section1 h2, .section2 h2 {
+			display: flex;
+			justify-content: center;
+			background: @main-color;
+			color: @accent-color;
+			border-radius: 2rem;
+			border-bottom: 2px solid @accent-color;
+
+		}
 
 		@media(max-width: 700px){
 			width: 100%;
@@ -227,8 +249,6 @@ body {
 			}
 
 			h2 {
-				border-bottom: 2px solid @dark-color;
-
 				@media(max-width: 500px){
 					text-align: center;
 				}
@@ -265,16 +285,13 @@ body {
 					text-align: center;
 				}
 
-				h2 {
-					border-bottom: 2px solid #696969;
-
 					@media(max-width: 500px){
 						width: 100%;
 						text-align: center;
 					}
 				}
 		}
-	}
+	
 
 .resume-bottom {
 	margin-top: 20rem;
@@ -289,7 +306,12 @@ body {
 	}
 
 		h2{
-			border-bottom: 2px solid @dark-color;
+			display: flex;
+			background: @main-color;
+			justify-content: center;
+			color: @accent-color;
+			border-bottom: 2px solid @accent-color;
+			border-radius: 2rem;
 		}
 	
 		.experience {
@@ -318,6 +340,5 @@ footer {
 	@media(max-width: 500px){
 		width: 100%;
 		margin: 15.5rem 0 0 0;
-		// text-align: center;
 	}
 }
