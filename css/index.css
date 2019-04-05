@@ -1,1 +1,407 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 62.5%;
+}
+body {
+  max-width: 1600px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/*----------------Colors------------------*/
+/*----------------Mixins-------------------*/
+/*----------------Styling Begins-------------*/
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  margin: 3rem 0;
+}
+header nav {
+  width: 100%;
+  margin: 0 0 0 7rem;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+header nav a {
+  margin: 0 5rem;
+  justify-content: space-between;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border-bottom: 2px solid #5c0808;
+  padding: 1rem;
+  background: #ebebeb;
+  color: black;
+}
+header nav a:hover {
+  color: white;
+  background: #5c0808;
+  border-color: black;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    border-bottom: 2px solid darkgray;
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav a:hover {
+    color: #5c0808;
+  }
+}
+.resume-intro {
+  display: flex;
+  width: 100%;
+  border-radius: 2rem;
+  justify-content: space-around;
+  background: #ebebeb;
+}
+.resume-intro .name {
+  flex-direction: column;
+  width: 60%;
+  margin: 3rem 2rem;
+  padding-right: 2rem;
+  color: white;
+  border-right: 2px dotted white;
+}
+@media (max-width: 700px) {
+  .resume-intro .name {
+    width: 100%;
+    border: none;
+  }
+}
+.resume-intro img {
+  border-radius: 5rem;
+  width: 27em;
+  margin-left: 3rem;
+  box-shadow: 5px 10px 20px black;
+}
+@media (max-width: 500px) {
+  .resume-intro img {
+    margin: 0;
+    width: 100%;
+    margin: 13rem 2rem 0;
+  }
+}
+.resume-intro h1 {
+  font-size: 3.7rem;
+  color: #5c0808;
+  margin: 2rem 0 0 5rem;
+}
+.resume-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: darkgray;
+  margin: 2rem 0 0 5rem;
+  margin-top: 1rem;
+}
+.resume-intro .snippet {
+  width: 40%;
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: #696969;
+  align-self: center;
+}
+@media (max-width: 700px) {
+  .resume-intro .snippet {
+    width: 100%;
+    display: none;
+  }
+}
+.resume-middle {
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  margin: 5rem 2rem;
+  justify-content: space-evenly;
+}
+.resume-middle .section1 h2,
+.resume-middle .section2 h2 {
+  display: flex;
+  justify-content: center;
+  background: #ebebeb;
+  color: #5c0808;
+  border-radius: 1rem;
+  border-bottom: 2px solid #5c0808;
+  padding: 0.5rem;
+}
+@media (max-width: 700px) {
+  .resume-middle {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .resume-middle {
+    width: 100%;
+    height: 10rem;
+    margin: 27rem 0 0 0;
+    flex-direction: column;
+  }
+}
+.resume-middle .section1 {
+  width: 40%;
+  flex-direction: column;
+  font-size: 1.8rem;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .resume-middle .section1 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .resume-middle .section1 h2 {
+    text-align: center;
+  }
+}
+.resume-middle .section1 p {
+  line-height: 2.3rem;
+  margin-top: 3rem;
+}
+@media (max-width: 500px) {
+  .resume-middle .section1 p {
+    width: 100%;
+    text-align: center;
+  }
+}
+.resume-middle .section2 {
+  width: 40%;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .resume-middle .section2 {
+    width: 100%;
+    margin: 7rem 0 0 0;
+  }
+}
+.resume-middle .section2 p {
+  border-bottom: 1px solid #696969;
+  padding: 2rem 0;
+}
+@media (max-width: 500px) {
+  .resume-middle .section2 {
+    width: 100%;
+    margin: 7rem 0 0 0;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .resume-middle .section2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.resume-bottom {
+  width: 80%;
+  height: 25rem;
+  margin: 30rem 10rem 10rem 11rem;
+}
+@media (max-width: 500px) {
+  .resume-bottom {
+    width: 100%;
+    margin: 28.5rem 0 0 0;
+    text-align: center;
+  }
+}
+.resume-bottom h2 {
+  display: flex;
+  background: #ebebeb;
+  justify-content: center;
+  color: #5c0808;
+  border-bottom: 2px solid #5c0808;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.resume-bottom .experience {
+  margin-top: 3rem;
+}
+.resume-bottom .experience table .title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+.resume-bottom .experience table {
+  width: 100%;
+  color: darkred;
+}
+.resume-bottom .experience table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.resume-bottom .experience table,
+.resume-bottom .experience th,
+.resume-bottom .experience td {
+  text-align: left;
+  border-bottom: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+    margin: 15.5rem 0 0 0;
+  }
+}
